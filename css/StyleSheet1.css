@@ -1,0 +1,177 @@
+﻿body{
+
+}
+
+button {
+    font-size: 2.7rem;
+    padding-bottom: 10px;
+}
+
+/*************************************************-class-**********************/
+/*mye unødvending enkelt koding, gjør det bedre senere*/
+
+.numberGrid {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px 90px;
+    height: 450px;
+    width: 300px;
+    font-size: 2.7rem;
+    padding: 10px 0 15px 30px;
+    border: solid 10px black;
+}
+
+.screen {
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 250px;
+    line-height: 1.5;
+}
+.rute1 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute1:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+.rute2 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute2:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.rute3 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute3:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.rute4 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute4:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.rute5 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute5:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.rute6 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute6:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.rute7 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute7:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.rute8 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute8:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.rute9 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute9:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.ruteC {
+    background-color: red;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.ruteC:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+}
+
+.rute0 {
+    background-color: lightslategrey;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.rute0:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.ruteOk {
+    background-color: lawngreen;
+    border: 5px solid black;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.ruteOk:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px lightgreen;
+}

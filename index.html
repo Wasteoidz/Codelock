@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Matrix login panel</title>
+    <link rel="stylesheet" href="css/stylesheet1.css" />
+</head>
+
+<body>
+    <div class="numberGrid">
+        <div id="info" class="screen"></div>
+        <br />
+        <button class="rute1" onclick="trykk(this)">1</button>
+        <button class="rute2" onclick="trykk(this)">2</button>
+        <button class="rute3" onclick="trykk(this)">3</button>
+
+        <button class="rute4" onclick="trykk(this)">4</button>
+        <button class="rute5" onclick="trykk(this)">5</button>
+        <button class="rute6" onclick="trykk(this)">6</button>
+
+        <button class="rute7" onclick="trykk(this)">7</button>
+        <button class="rute8" onclick="trykk(this)">8</button>
+        <button class="rute9" onclick="trykk(this)">9</button>
+
+        <button class="ruteC" onclick="slett(this)">C</button>
+        <button class="rute0" onclick="trykk(this)">0</button>
+        <button class="ruteOk" onclick="ok(this)">OK</button>
+
+    </div>
+
+
+    <script>
+        var attempts = 1;
+
+        function trykk(value) {
+            var nummer = value.innerHTML;
+            var screen = document.getElementById('info');
+            screen.innerHTML += nummer;
+            console.log(nummer);
+        }
+
+        function slett() {
+            document.getElementById('info').innerHTML = '';
+        }
+        function ok() {
+            var input = document.getElementById('info');
+            console.log(input.innerHTML)
+            if (input.innerHTML == 1337) {
+                alert("welcome Mr Anderson, Agent Smith is expecting you on the third floor.")
+            }
+            else {
+                alert("error!" + " " + attempts + " attempt failed!" )
+                attempts++;
+                if (attempts > 3) {
+                    alert("You have failed too many times, multiple agents are on their way!")
+                }
+                console.log(attempts)
+                    
+                
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
