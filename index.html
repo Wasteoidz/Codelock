@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>Matrix login panel</title>
     <link rel="stylesheet" href="css/StyleSheet1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,11 +30,12 @@
         <button class="ruteOk" onclick="ok(this)">OK</button>
 
     </div>
+    
+    <div id="display"></div>
 
 
     <script>
-        var attempts = 1;
-
+        var attempts = 3;
         function trykk(value) {
             var nummer = value.innerHTML;
             var screen = document.getElementById('info');
@@ -42,19 +45,25 @@
 
         function slett() {
             document.getElementById('info').innerHTML = '';
+            document.getElementById('display').innerHTML = '';
         }
         function ok() {
             var input = document.getElementById('info');
             console.log(input.innerHTML)
             if (input.innerHTML == 1337) {
-                alert("welcome Mr Anderson, The Oracle is expecting you on the third floor.")
+                document.getElementById('info').innerHTML = 'Correct!';
+                document.getElementById('display').innerHTML = 'welcome Mr Anderson, The Oracle is expecting you on the third floor.';
             }
             else {
-                alert("error!" + " " + attempts + " attempt failed!" )
-                attempts++;
-                if (attempts > 3) {
-                    alert("You have failed too many times, multiple agents are on their way!")
+                document.getElementById('info').innerHTML = 'Error!!';
+                document.getElementById('display').innerHTML = "Try again! " + "you have " + attempts + " attempt(s) left" ;
+
+                attempts--;
+                if (attempts <= -1) {
+                    document.getElementById('display').innerHTML = 'You have failed too many times, multiple agents are on their way!';
+                    return Math.min(0, attempts - 1);
                 }
+                
                 console.log(attempts)
                     
                 
